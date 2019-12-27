@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+    var nome = prompt("digite seu nome");
+    var salariob = Number(prompt("digite seu salario Bruto"));
+    var salariof = Number(prompt("digite o seu falario familia"));
+    var auxilioe = Number(prompt("digite o valor do auxilio escola"));
+    var auxiliof = Number(prompt("digite o valor do auxilio farmacia"));
+    function folha(salb, salf, auxe, auxf) {
+        var total = salb + salf + auxe + auxf
+        return total
+        
+
+    }
+  
+
+
+    function desconto(salariobruto) {
+        var descont = salariobruto * 0.11
+        var vt = salariobruto * 0.06
+      salariobruto = salariobruto - descont - vt
+
+        if (salariobruto <= 2499.99) {
+            alert("Voce estorou")
+        } else if (salariobruto>= 2500.00 && salariobruto<5000){
+            salariobruto -= salariobruto * 0.15
+        alert("foi descontado 15% de imposto")              
+        }
+        else if (salariobruto>= 5000.00) {
+            salariobruto -= salariobruto * 0.275
+            alert("foi descontado 27,5% de imposto")
+        }
+        
+        return salariobruto
+
+    }
+  alert(desconto(folha(salariob,salariof,auxilioe,auxiliof)))
+
+</script>
+
+</html>

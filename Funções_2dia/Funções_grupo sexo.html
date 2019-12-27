@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+
+
+    var i = 1;
+    var mulher = 0
+    var homem = 0
+    var veio = 0
+    var novo = 0
+
+
+    do {
+
+        var nome = prompt('Escreva o seu nome');
+        var sexo = prompt('Escreva F para feminino ou M para masculino');
+        var idade = Number(prompt('Qual é a sua idade?'));
+
+        if (sexo == 'F') {
+            mulher++;
+        }
+        else if (sexo == 'M') {
+            homem++
+
+        }
+
+        if (idade < 18) {
+            novo++
+        }
+
+        else if (idade > 18) {
+            veio++
+
+        }
+        i++
+
+    } while (i <= 10)
+
+    document.write("A quantidade de mulheres é"  + mulher <br> + "A quantidade de homens é" + homem + "A quantidade de menores de idade é" + novo + "A quantidade de maiores de idade é" + veio)
+
+</script>
+
+</html>
